@@ -1,0 +1,56 @@
+digraph G {
+node [shape=box];
+"base_footprint" [label="base_footprint"];
+"base_link" [label="base_link"];
+"batery_link" [label="batery_link"];
+"camera_link" [label="camera_link"];
+"caster_back_link" [label="caster_back_link"];
+"mcu_link" [label="mcu_link"];
+"mcu_link_1" [label="mcu_link_1"];
+"base_second_link" [label="base_second_link"];
+"stand_1_link" [label="stand_1_link"];
+"stand_2_link" [label="stand_2_link"];
+"stand_3_link" [label="stand_3_link"];
+"stand_4_link" [label="stand_4_link"];
+"stand_mcu1_link" [label="stand_mcu1_link"];
+"stand_mcu2_link" [label="stand_mcu2_link"];
+"stand_mcu3_link" [label="stand_mcu3_link"];
+"stand_mcu4_link" [label="stand_mcu4_link"];
+"wheel_left_link" [label="wheel_left_link"];
+"wheel_right_link" [label="wheel_right_link"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_footprint" -> "base_joint" [label="xyz: 0 0 0.05 \nrpy: 0 -0 0"]
+"base_joint" -> "base_link"
+"base_link" -> "batery_joint" [label="xyz: 1.2 0.2 0.43 \nrpy: 0 -0 1.57"]
+"batery_joint" -> "batery_link"
+"base_link" -> "camera_joint" [label="xyz: 0.49 -0.03 0.75 \nrpy: 0 0.21 0"]
+"camera_joint" -> "camera_link"
+"base_link" -> "caster_back_joint" [label="xyz: -0.4 0.1 0.26 \nrpy: 0 -0 0"]
+"caster_back_joint" -> "caster_back_link"
+"base_link" -> "mcu_joint" [label="xyz: 0.02 0.12 0.73 \nrpy: 0 -0 0"]
+"mcu_joint" -> "mcu_link"
+"base_link" -> "mcu_joint_1" [label="xyz: 0.02 0.12 0.83 \nrpy: 0 -0 0"]
+"mcu_joint_1" -> "mcu_link_1"
+"base_link" -> "second_level_joint" [label="xyz: 0 0 0.68 \nrpy: 0 -0 0"]
+"second_level_joint" -> "base_second_link"
+"base_link" -> "stand_1_joint" [label="xyz: 0.5 0.4125 0.58 \nrpy: 0 -0 1.57"]
+"stand_1_joint" -> "stand_1_link"
+"base_link" -> "stand_2_joint" [label="xyz: 0.5 -0.2625 0.58 \nrpy: 0 -0 1.57"]
+"stand_2_joint" -> "stand_2_link"
+"base_link" -> "stand_3_joint" [label="xyz: -0.4 0.4125 0.58 \nrpy: 0 -0 1.57"]
+"stand_3_joint" -> "stand_3_link"
+"base_link" -> "stand_4_joint" [label="xyz: -0.4 -0.2625 0.58 \nrpy: 0 -0 1.57"]
+"stand_4_joint" -> "stand_4_link"
+"base_link" -> "stand_mcu1_joint" [label="xyz: 0.02 0.25 0.78 \nrpy: 0 -0 1.57"]
+"stand_mcu1_joint" -> "stand_mcu1_link"
+"base_link" -> "stand_mcu2_joint" [label="xyz: 0.02 -0.1125 0.78 \nrpy: 0 -0 1.57"]
+"stand_mcu2_joint" -> "stand_mcu2_link"
+"base_link" -> "stand_mcu3_joint" [label="xyz: 0.25 0.25 0.78 \nrpy: 0 -0 1.57"]
+"stand_mcu3_joint" -> "stand_mcu3_link"
+"base_link" -> "stand_mcu4_joint" [label="xyz: 0.25 -0.1125 0.78 \nrpy: 0 -0 1.57"]
+"stand_mcu4_joint" -> "stand_mcu4_link"
+"base_link" -> "wheel_left_joint" [label="xyz: 0.15 0.4125 0.3 \nrpy: -1.57 0 0"]
+"wheel_left_joint" -> "wheel_left_link"
+"base_link" -> "wheel_right_joint" [label="xyz: 0.15 -0.5625 0.3 \nrpy: -1.57 0 0"]
+"wheel_right_joint" -> "wheel_right_link"
+}

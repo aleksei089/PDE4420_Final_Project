@@ -1,0 +1,8 @@
+prefix=/home/alex/final_project_ws/devel
+
+Name: map_provider
+Description: Description of map_provider
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
