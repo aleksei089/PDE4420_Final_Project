@@ -1,8 +1,0 @@
-prefix=/home/alex/final_project_ws/devel
-
-Name: my_final_project
-Description: Description of my_final_project
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

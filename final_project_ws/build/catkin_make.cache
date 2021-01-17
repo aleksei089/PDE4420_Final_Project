@@ -1,2 +1,0 @@
-map_provider:my_final_project:rosbots_description
--DCATKIN_DEVEL_PREFIX=/home/alex/final_project_ws/devel -DCMAKE_INSTALL_PREFIX=/home/alex/final_project_ws/install -G Unix Makefiles
